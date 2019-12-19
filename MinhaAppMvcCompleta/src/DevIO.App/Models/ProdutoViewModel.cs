@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -35,5 +36,6 @@ namespace DevIO.App.Models
         [DisplayName("Ativo?")]
         public bool Ativo { get; set; }
         public FornecedorViewModel Fornecedor { get; set; }
+        public IEnumerable<FornecedorViewModel> Fornecedores { get; set; }
     }
 }
