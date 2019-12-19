@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DevIO.App.Models;
+using DevIO.App.ViewModels;
 using DevIO.Business.Models;
 
 namespace DevIO.App.AutoMapper
