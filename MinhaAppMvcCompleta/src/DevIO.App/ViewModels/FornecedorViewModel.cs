@@ -25,8 +25,7 @@ namespace DevIO.App.Models
 
         [DisplayName("Ativo?")]
         public bool Ativo { get; set; }
-
-        /* EF Relatioins */
+        
         public IEnumerable<ProdutoViewModel> Produtos { get; set; }
     }
 }

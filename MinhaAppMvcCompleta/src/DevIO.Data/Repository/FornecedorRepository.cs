@@ -28,7 +28,7 @@ namespace DevIO.Data.Repository
         {
             return await _context.Fornecedores.AsNoTracking()
                 .Include(c => c.Endereco)
-                .Include(c=>c.Endereco)
+                .Include(c => c.Produtos)
                 .FirstOrDefaultAsync(p => p.Id.Equals(id));
         }
     }
